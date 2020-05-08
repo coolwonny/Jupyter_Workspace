@@ -1,0 +1,2 @@
+There were 4945 customers over the course of 100 days.
+Average was 49.45.

@@ -32,6 +32,7 @@ mid_cap = []
 small_cap = []
 
 for bank_name, market_cap in banks.items():
+
     total_market_cap += int(market_cap)
     count += 1
     if minimum == 0:
@@ -40,30 +41,67 @@ for bank_name, market_cap in banks.items():
     elif market_cap < minimum:
         minimum = market_cap
         minimum_key = bank_name
-    elif market_cap > maximum:
+
+    if market_cap > maximum:
         maximum = market_cap
         maximum_key = bank_name
+print(maximum_key)
+#     if market_cap >= 300:
+#        mega_cap.append(bank_name)
+#     elif market_cap >= 10:
+#         large_cap.append(bank_name)
+#     elif  market_cap >= 2:
+#         mid_cap.append(bank_name)
+#     elif market_cap >= 0.3: 
+#         small_cap.append(bank_name)
 
-    if market_cap >= 300:
-       mega_cap.append(bank_name)
-    elif market_cap >= 10:
-        large_cap.append(bank_name)
-    elif  market_cap >= 2:
-        mid_cap.append(bank_name)
-    elif market_cap >= 0.3:
-        small_cap.append(bank_name)
+#         # if minimum == 0:
+# #         minimum = x
+# #         minimum_key = key
+# #     elif x < minimum:
+# #         minimum = x
+# #         minimum_key = key
+# #     elif x > maximum:
+# #         maximum = x
+# #         maximum_key = key
 
-average =  round(total_market_cap / count, 2)
+# #     if x >= 300:
+# #        mega_cap.append(key)
+# #     elif x >= 10:
+# #         large_cap.append(key)
+# #     elif  x >= 2:
+# #         mid_cap.append(key)
+# #     elif x >= 0.3:
+# #         small_cap.append(key)
 
-print(f"Total Market Capitalization: {total_market_cap}")
-print(f"Total Number of Banks: {count}")
-print(f"Average Market Capitalization: {average}")
-print(f"Largest Bank: {maximum_key}")
-print(f"Smallest Bank: {minimum_key}")
-print(f"Mega Cap Banks: {mega_cap}")
-print(f"Large Cap Banks: {large_cap}")
-print(f"Mid Cap Banks: {mid_cap}")
-print(f"Small Cap Banks: {small_cap}")
+# average =  round(total_market_cap / count, 2)
+
+# print(f"Total Market Capitalization: {total_market_cap}")
+# print(f"Total Number of Banks: {count}")
+# print(f"Average Market Capitalization: {average}")
+# print(f"Largest Bank: {maximum_key}")
+# print(f"Smallest Bank: {minimum_key}")
+# print(f"Mega Cap Banks: {mega_cap}")
+# print(f"Large Cap Banks: {large_cap}")
+# print(f"Mid Cap Banks: {mid_cap}")
+# print(f"Small Cap Banks: {small_cap}")
 
 
+#  if minimum == 0:
+#         minimum = x
+#         minimum_key = key
+#     elif x < minimum:
+#         minimum = x
+#         minimum_key = key
+#     elif x > maximum:
+#         maximum = x
+#         maximum_key = key
 
+#     if x >= 300:
+#        mega_cap.append(key)
+#     elif x >= 10:
+#         large_cap.append(key)
+#     elif  x >= 2:
+#         mid_cap.append(key)
+#     elif x >= 0.3:
+#         small_cap.append(key)
