@@ -1,2 +1,2 @@
 # Jupyter_Workspace
-Jupyter Practice at SMU Bootcamp  
+Jupyter Notebook Practice
